@@ -1,0 +1,31 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Editing a queue") {
+        In this chapter we will learn how to add and remove items from the queue.
+        
+        @Image(source: MacMiniM1.png, alt: "Editor")
+    }
+    
+    @Section(title: "Add items in the queue") {
+        @ContentAndMedia {
+            Let us look at how we can add items to the queue.
+            
+            @Image(source: Xcode-2020, alt: "Push")
+        }
+        
+        @Steps {
+            @Step {
+                First we will need to create an empty queue.
+                
+                @Code(name: "AddItems.swift", file: createEmptyQueue.swift)
+            }
+            
+            @Step {
+                Then we will call the push method.
+                
+                @Code(name: "AddItems.swift", file: createEmptyQueue-2.swift) {
+                    @Image(source: iOS16.png, alt: "A screenshot from the Xcode preview as it would appear on iPhone, with the text, Hello, World!, centered in the middle of the display.")
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Creating a queue") {
+        The ``AmaranthineQueue/AMRQueue`` provides several different ways of initializing our queue. Each approach is designed to cater to a specific situation. In this chapter we will look at all the different ways of doing this.
+        
+        @Image(source: flipboard.png, alt: "Inits")
+    }
+    
+    @XcodeRequirement(
+                      title: "Xcode 14", 
+                      destination: "https://developer.apple.com/download/")
+    
+    @Section(title: "Creating an empty queue") {
+        @ContentAndMedia {
+            This is the easiest of the lot.
+            
+            @Image(source: SwiftPlaygrounds.png, alt: "Create")
+        }
+        
+        @Steps {
+            @Step {
+                We simply call the basic init.
+                
+                @Code(name: "createEmptyQueue.swift", file: createEmptyQueue.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Creating a fixed size queue") {
+        @ContentAndMedia {
+            Here we predefine the maximum number of elements that a queue can hold.
+            
+            @Image(source: SwiftPlaygrounds.png, alt: "Create")
+        }
+        
+        @Steps {
+            @Step {
+                We will declare a variable to hold the queue size.
+                
+                @Code(name: "fixedSizeQueue-1.swift", file: fixedSizeQueue-1.swift)
+            }
+            
+            @Step {
+                We will call the init that allows us to specify the capacity.
+                
+                @Code(name: "fixedSizeQueue-2.swift", file: fixedSizeQueue-2.swift)
+            }
+        }
+    }
+    
+    @Section(title: "Creating a queue with prepopulated data") {
+        @ContentAndMedia {
+            Here we create the queue whil providing some initial values to the queue via an array.
+        }
+        
+        @Steps {
+            @Step {
+                We will declare a variable that holds the array
+                
+                @Code(name: "createPrepopulatedQueue-1.swift", file: createPrepopulatedQueue-1.swift)
+            }
+            
+            @Step {
+                We will call the init that allows us to specify the array as input.
+                
+                @Code(name: "createPrepopulatedQueue-2.swift", file: createPrepopulatedQueue-2.swift)
+            }
+        }
+    }
+        
+    @Assessments {
+        @MultipleChoice {
+            What do you choose?
+            
+            @Choice(isCorrect: false) {
+                Option `A`
+                
+                @Justification(reaction: "Try again!") {
+                    Maybe something else.
+                }
+            }
+            
+            @Choice(isCorrect: false) {
+                Option `B`
+                
+                @Justification(reaction: "Try again!") {
+                    Maybe something else.
+                }
+            }
+            
+            @Choice(isCorrect: true) {
+                Option `C`
+                
+                @Justification(reaction: "Try again!") {
+                    That's the right one.
+                }
+            }
+        }
+    }
+}

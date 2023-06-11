@@ -1,0 +1,67 @@
+@Tutorials(name: "AmaranthineQueue") {
+    @Intro(title: "How to use the AMRQueue effectively") {
+        In this tutorial you will learn about the different ways in which you can use the queue
+        
+        @Image(source: iOS16.png, alt: "A queue of items lined up one after another.")
+    }
+    
+    @Volume(name: "First") {
+        
+        Creation
+        @Image(source: ios15.png, alt: "Creator")
+        
+        @Chapter(name: "Creating a Queue") {
+            In this chapter we will learn about the different ways in which we can create a queue.
+            
+            @Image(source: ios15.png, alt: "Creator")
+            
+            @TutorialReference(tutorial: "doc:CreatingAQueue")
+        }
+    }
+    
+    @Volume(name: "Second") {
+        
+        Modification
+        @Image(source: SwiftUI.png, alt: "Editor")
+        
+        @Chapter(name: "Editing a Queue") {
+            In this chapter we will learn about the different ways of editing the queue.
+            
+            @Image(source: SwiftUI.png, alt: "Editor")
+            
+            @TutorialReference(tutorial: "doc:EditingAQueue")
+        }
+    }
+    
+    @Resources {
+        Explore more resources for learning about Queues.
+
+        @Videos(destination: "https://www.youtube.com/channel/UC127UHd8V7bxPQYnd9QrN8w") {
+            Learn more.
+
+            - [My Blog](https://www.arunpatwardhan.com/)
+        }
+
+        @Downloads(destination: "https://github.com/AmaranthineTech") {
+            Download some exciting projects.
+        }
+        
+        @Forums(destination: "https://github.com/AmaranthineTech") {
+            Excellent articles.
+        }
+        
+        @SampleCode(destination: "https://github.com/AmaranthineTech") {
+            Download and explore sample code projects to get to know AmaranthineQueue.
+
+            - [Old](https://github.com/AmaranthineTech/AmaranthineQueue-old)
+            - [New](https://github.com/AmaranthineTech/AmaranthineQueue)
+        }
+        
+        @Documentation(destination: "https://www.example.com/sloth-docs/") {
+            Browse and search sloth-related documentation.
+
+            - [SlothCreator API](https://www.example.com/sloth-docs/slothcreator/)
+            - [Sloth Technical Specification](https://www.example.com/sloth-docs/sloth-spec/)
+        }
+    }
+}
